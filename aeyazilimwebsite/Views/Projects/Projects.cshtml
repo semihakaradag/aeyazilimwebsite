@@ -1,0 +1,60 @@
+﻿@model IEnumerable<aeyazilimwebsite.Models.Project>
+
+@{
+    ViewData["Title"] = "Projects";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<main id="main">
+    <!-- Breadcrumbs Section -->
+    <section id="breadcrumbs" class="breadcrumbs" style="margin-top: 120px;">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Projelerimiz</h2>
+                <ol>
+                    <li><a href="/Home/Index" style="color: green;">Ana Sayfa</a></li>
+                    <li>&nbsp;&nbsp;</li>
+                    <li>/</li>
+                    <li>&nbsp;&nbsp;</li>
+                    <li>Projelerimiz</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Grid-->
+    <section class="page-section bg-light" id="portfolio">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Projeler</h2>
+                <h3 class="section-subheading text-muted">Ekiplerimiz tarafından geliştirilen projelerden bazıları</h3>
+            </div>
+            <div class="row">
+                @if (Model != null)
+                {
+                    foreach (var project in Model)
+                    {
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" href="/Projects/Details/@project.Id">
+                                    <img class="img-fluid" src="~/img/portfolio/@project.Image" alt="@project.Title" />
+                                    <div class="portfolio-caption">
+                                        <h4 class="portfolio-caption-heading">@project.Title</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    }
+                }
+                 else
+                {
+                    <p>There are no projects available.</p>
+                }
+
+            </div>
+        </div>
+    </section>
+</main>
+
+
+

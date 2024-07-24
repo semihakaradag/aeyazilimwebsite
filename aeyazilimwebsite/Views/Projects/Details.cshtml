@@ -1,0 +1,63 @@
+﻿@model aeyazilimwebsite.Models.Project
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<main id="main">
+    <!-- Breadcrumbs Section -->
+    <section id="breadcrumbs" class="breadcrumbs" style="margin-top: 120px;">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>@Model.Title</h2>
+                <ol>
+                    <li><a href="/Home/Index" style="color: green;">Ana Sayfa</a></li>
+                    <li>&nbsp;&nbsp;</li>
+                    <li>/</li>
+                    <li>&nbsp;&nbsp;</li>
+                    <li><a href="/Projects/Projects" style="color: green;">Projelerimiz</a></li>
+                    <li>&nbsp;&nbsp;</li>
+                    <li>/</li>
+                    <li>&nbsp;&nbsp;</li>
+                    <li>@Model.Title</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Details Section -->
+<section id="portfolio-details" class="portfolio-details">
+    <div class="container">
+        <div class="portfolio-details-container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <!-- Carousel -->
+                    <div class="owl-carousel portfolio-details-carousel owl-loaded owl-drag">
+                        <img src="~/img/portfolio/@Model.Image" class="img-fluid" alt="@Model.Title">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <!-- Proje Bilgileri -->
+                    <div class="portfolio-info">
+                        <div class="project-info-box">
+                            <h3>Proje Bilgileri</h3>
+                            <ul>
+                                <li><strong>Proje Ortağı:</strong> @Model.Partner</li>
+                                <li><strong>Proje Tarihi:</strong> @Model.ProjectDate.ToString("dd.MM.yyyy")</li>
+                                <li><strong>Proje Url:</strong> <a target="_blank" href="@Model.ProjectUrl">@Model.ProjectUrl</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Proje Açıklaması -->
+            <div class="portfolio-description">
+                <h2>@Model.Title</h2>
+                <p>@Model.Description</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+

@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Ana Sayfa - AE Yazılım Teknoloji</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="~/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - aeyazilimwebsite</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/aeyazilimwebsite.styles.css" asp-append-version="true" />
+</head>
+
+
+    <!-- Navigation-->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+            <h1 class="logo mr-auto"><a href="/Home/Index"><img src="~/images/logo (6).png" title="Ae Kod Teknolojisi"></a></h1>
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li class="active"><a href="/Home/Index">Ana Sayfa</a></li>
+                    <li class="drop-down">
+                        <a href="#">Kurumsal <i class="fas fa-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="/Kurumsal/Hakkimizda#about">Hakkımızda</a></li>
+                            <li><a href="/Kurumsal/Gizlilik">Gizlilik Bildirimi</a></li>
+                            <li><a href="/Kurumsal/EpostaUyari">E-Posta Uyarı</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/Projects/Projects">Projeler</a></li>
+                    <li class="drop-down">
+                        <a href="#">Arge <i class="fas fa-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="/Arge/Iot">IoT (Internet of Things)</a></li>
+                            <li><a href="/Arge/Biomedikal">BioMedikal Teknoloji</a></li>
+                            <li><a href="/Arge/Mutfak">Mutfak</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/Home/Index#connaction">İLETİŞİM</a></li>
+                </ul>
+            </nav>
+            <a href="https://isyerim.param.com.tr/#/paymentform/mypaymentpage/68tJNfkcidICt0lQVwHpSg==" target="_blank" class="get-started-btn scrollto">ÖDEME SİSTEMİ</a>
+        </div>
+    </header>
+
+
+    <body>
+   <main role="main" class="container-fluid">
+        <div class="row no-gutters">
+            <div class="col-12">
+                @RenderBody()
+            </div>
+        </div>
+    </main>
+    </body>
+
+
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-info">
+                            <h3><img src="~/images/logo (6).png" title="Ae Kod Teknolojisi" width="200"></h3>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">
+                                        Selçuk Üniversitesi Teknoloji Geliştirme Bölgesi Ardıçlı Mh Gürbulut Sk No:67/A2-Z06 Selçuklu 42003 Konya
+                                    </font>
+                                </font><br><br>
+                                <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Telefon:</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> +90332 606 0235 </font></font><br>
+                                <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">E-Posta:</font></font></strong> <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> bilgi@aeyazilim.com</font></font><br>
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Menü</font></font></h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/Home/Index"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ana Sayfa</font></font></a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/Kurumsal/Hakkimizda#about"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hakkımızda</font></font></a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/Kurumsal/Gizlilik"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gizlilik Bildirimi</font></font></a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/Kurumsal/EpostaUyari"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Eposta Uyarısı</font></font></a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/Kurumsal/Stajyer"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Stajyer Bilgi Formu</font></font></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>&nbsp;</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/Projects/Projects"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Projelerimiz</font></font></a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/Arge/Iot"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nesnelerin İnterneti</font></font></a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/Arge/Biomedikal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">BioMedikal Teknoloji</font></font></a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/Arge/Mutfak"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mutfak</font></font></a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/Home/Index#connaction"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">İletişim</font></font></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ödeme Sistemi</font></font></h4>
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sanal pos alt Yapı BDDK tarafından ruhsatlandırılmış Turk Elektronik Para A.Ş. hizmeti TURKPOS tarafından indirildi.</font></font></p>
+                        <img src="https://param.com.tr/images/param-logo-v3-mor.svg" alt="ParamPOS" style="width:50%">
+                        <hr>
+                        <h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Yetkili Kişi</font></font></h4>
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ahmet Büyükaslan</font></font></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">Copyright &copy; AE Yazılım Teknoloji. <br> Tüm Hakkı Saklıdır.</div>
+
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/ae_yazilim" aria-label="İnstagram"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/aeyazilim" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/company/aeyazilim/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</html>
